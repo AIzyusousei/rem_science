@@ -1,0 +1,31 @@
+python -m venv "仮想環境名" で仮想環境が構築される
+.\仮想環境名\Scripts\activate で仮想環境が活性化される
+・pip install パッケージ名 でパッケージがインストールされる
+・pip list でいまのパッケージが分かる
+・pyhon -m pip --version でバージョンが分かる
+
+
+・仮想環境はgitで共有しない．ただ，.gitignoreファイルで除外して，requirements.txtというファイルを作成/共有すればよい
+１．仮想環境内に.gitignoreファイルを以下の内容で作成
+# venv
+sciencenv/
+# Python一般
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.build/
+dist/
+# Jupyter
+.ipynb_checkpoints/
+# エディタ
+.vscode/
+.idea/
+# OS
+.DS_Store
+Thumbs.db
+
+2. requirements.tex の生成
+pip freeze > requirements.txtで生成される

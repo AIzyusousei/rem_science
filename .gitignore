@@ -1,0 +1,19 @@
+# venv
+sciencenv/
+# Python一般
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.build/
+dist/
+# Jupyter
+.ipynb_checkpoints/
+# エディタ
+.vscode/
+.idea/
+# OS
+.DS_Store
+Thumbs.db
